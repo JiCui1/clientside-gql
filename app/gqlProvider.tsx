@@ -7,6 +7,7 @@ import { cacheExchange } from '@urql/next' //kinda like redux for react
 import { url } from '@/utils/url'
 import { getToken } from '@/utils/token'
 
+//create GQL provider
 const GQLProvider = ({ children }) => {
   const [client, ssr] = useMemo(() => {
     const ssr = ssrExchange({
